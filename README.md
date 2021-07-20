@@ -3,17 +3,17 @@
 ## Task_One
 
 终端运行指令
-'''cpp
-cd ~/catkin_ws
-catkin_make
-source devel/setup.bash
-roscore
-rosrun turtlesim turtlesim_node
-rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle1_tf_broadcaster /turtle1
-rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle2_tf_broadcaster /turtle2
-rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle3_tf_broadcaster /turtle3
-rosrun turtlesim_tf_follow turtle_tf_listener
-rosrun turtlesim turtle_teleop_key
+'''
+		cd ~/catkin_ws
+		catkin_make
+		source devel/setup.bash
+		roscore
+		rosrun turtlesim turtlesim_node
+		rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle1_tf_broadcaster /turtle1
+		rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle2_tf_broadcaster /turtle2
+		rosrun turtlesim_tf_follow turtle_tf_broadcaster __name:=turtle3_tf_broadcaster /turtle3
+		rosrun turtlesim_tf_follow turtle_tf_listener
+		rosrun turtlesim turtle_teleop_key
 '''
 
 部分重要代码
