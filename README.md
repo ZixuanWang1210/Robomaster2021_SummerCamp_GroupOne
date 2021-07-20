@@ -3,7 +3,7 @@
 ## Task_One
 
 终端运行指令
-'''
+'''cpp
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
@@ -40,11 +40,11 @@ rosrun turtlesim turtle_teleop_key
 ## Task_Two
 
 终端运行指令
-'''
+'''cpp
 roslaunch remap_launch simple_plus.launch
 '''
 或
-'''
+'''cpp
 roscore
 rosrun turtlesim turtlesim_node
 rosservice call /spawn "x: 0.0 y: 0.0 theta: 0.0 name: 'turtle2'" 
@@ -52,7 +52,7 @@ roslaunch remap_launch simple.launch
 '''
 
 部分重要代码
-'''xml
+'''HTML
 <launch>
     <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key_as" output="screen">
         <remap from="/turtle1/cmd_vel" to="/turtle2/cmd_vel" /> 
@@ -60,7 +60,7 @@ roslaunch remap_launch simple.launch
 </launch>
 '''
 或
-'''xml
+'''HTML
 <node pkg="turtlesim" name="mimic" type="mimic">
 <remap from="input" to="turtlesim1/turtle1"/>
 <remap from="output" to="turtlesim2/turtle1"/>
@@ -69,7 +69,7 @@ roslaunch remap_launch simple.launch
 
 ## Task_Three
 终端运行指令
-'''
+'''cpp
 rosrun odom_publish odometry_publisher
 rviz
 '''
