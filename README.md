@@ -57,7 +57,7 @@
 '''xml
 
 	<launch>
-	    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key_as" output="screen">
+	    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key" output="screen">
 	        <remap from="/turtle1/cmd_vel" to="/turtle2/cmd_vel" /> 
  	   </node>
 	</launch>
